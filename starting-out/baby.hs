@@ -13,3 +13,9 @@ listCompletion = [x * 2 | x <- [1 .. 10]]
 excludeListComplition = [x | x <- [10 .. 20], x /= 13, x /= 15, x /= 19]
 
 multipleListComplition = [x * y | x <- [2, 5, 10], y <- [8, 10, 11], x * y > 50]
+
+nouns = ["hobo", "frog", "pope"]
+
+adjectives = ["lazy", "grouchy", "scheming"]
+
+sentence = [adjective ++ " " ++ noun | adjective <- adjectives, noun <- nouns]
