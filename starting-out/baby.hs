@@ -21,3 +21,5 @@ adjectives = ["lazy", "grouchy", "scheming"]
 sentence = [adjective ++ " " ++ noun | adjective <- adjectives, noun <- nouns]
 
 length' xs = sum [1 | _ <- xs]
+
+removeNonUppercase st = [c | c <- st, c `elem` ['A' .. 'Z']]
