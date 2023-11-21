@@ -23,3 +23,6 @@ sentence = [adjective ++ " " ++ noun | adjective <- adjectives, noun <- nouns]
 length' xs = sum [1 | _ <- xs]
 
 removeNonUppercase st = [c | c <- st, c `elem` ['A' .. 'Z']]
+
+zipTwoList :: [(Integer, String)]
+zipTwoList = zip [1 .. 5] ["one", "two", "three", "four", "five"]
