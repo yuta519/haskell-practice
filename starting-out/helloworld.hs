@@ -1,1 +1,1 @@
-main = do { putStrLn "Hello World!"; print (product [1..5])}
+main = do putStrLn "Hello World!"; print (product [1 .. 5])
