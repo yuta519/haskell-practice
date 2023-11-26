@@ -18,3 +18,10 @@ tell [] = "The list is empty"
 tell [x] = "The list has one element: " ++ show x
 tell [x, y] = "The list has two elements: " ++ show x ++ " and " ++ show y
 tell (x : y : _) = "This list is long. The first two elements are: " ++ show x ++ " and " ++ show y
+
+length' :: String -> Int
+length' [] = 0
+length' (x : xs) = 1 + length' xs
+
+-- By using foldr, this above code becomes concise
+-- length' = foldr (\x -> (+) 1) 0
