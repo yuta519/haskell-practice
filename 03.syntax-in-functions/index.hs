@@ -25,3 +25,7 @@ length' (x : xs) = 1 + length' xs
 
 -- By using foldr, this above code becomes concise
 -- length' = foldr (\x -> (+) 1) 0
+
+sum' :: (Num a) => [a] -> a
+sum' [] = 0
+sum' (x : xs) = x + sum' xs
