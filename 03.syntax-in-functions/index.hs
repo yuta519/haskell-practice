@@ -51,3 +51,9 @@ densityTell mass volume
     density = mass / volume
     air = 1.2
     water = 1000.0
+
+initials :: String -> String -> String
+initials firstname lastname = [f] ++ ". " ++ [l] ++ "."
+  where
+    (f : _) = firstname
+    (l : _) = lastname
