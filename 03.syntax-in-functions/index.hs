@@ -29,3 +29,9 @@ length' (x : xs) = 1 + length' xs
 sum' :: (Num a) => [a] -> a
 sum' [] = 0
 sum' (x : xs) = x + sum' xs
+
+-- Using guard
+max' :: (Ord a) => a -> a -> a
+max' a b
+  | a > b = a
+  | otherwise = b
