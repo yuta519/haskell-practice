@@ -26,7 +26,7 @@ length' = foldr (\x -> (+) 1) 0
 -- length' = foldr (\x -> (+) 1) 0
 
 sum' :: (Num a) => [a] -> a
-sum' = sum
+sum' = foldr (+) 0
 
 -- Using guard
 max' :: (Ord a) => a -> a -> a
